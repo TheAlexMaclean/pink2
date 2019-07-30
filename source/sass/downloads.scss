@@ -1,0 +1,149 @@
+.downloads {
+  position: relative;
+  width: 320px;
+  background-color: #1d2631;
+  text-align: center;
+}
+
+.downloads__img--phone {
+  position: absolute;
+  top: 148px;
+  left: 0;
+}
+
+.downloads__img--phone-pink {
+  position: absolute;
+  top: 180px;
+  right: 105px;
+}
+
+.downloads__link {
+  display: block;
+  width: 220px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 40px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+
+  &:hover {
+    background-color: #fff;
+    color: #d22856;
+  }
+
+}
+
+.downloads__icon {
+  width: 220px;
+  height: 65px;
+  padding: 0;
+  padding-top: 40px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.downloads__slogan {
+  display: none;
+}
+
+.downloads__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: lighter;
+}
+
+@media (min-width:$tablet-width) {
+  .downloads {
+    width: 660px;
+  }
+
+  .downloads__img--phone {
+    top: 184px;
+    left: 0;
+  }
+
+  .downloads__img--phone-pink {
+    position: absolute;
+    top: 238px;
+    right: 94px;
+  }
+
+  .downloads__link {
+    position: absolute;
+    margin-top: -355px;
+    margin-left: 35px;
+    }
+
+  .downloads__icon {
+    position: absolute;
+    bottom: 190px;
+    left: 60px;
+    padding: 0;
+    padding-top: 40px;
+    margin: 0 auto;
+
+  }
+
+  .downloads__slogan {
+    display: block;
+    position: absolute;
+    top: 164px;
+    left: 90px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .downloads__text {
+    position: absolute;
+    bottom: 50px;
+    left: 75px;
+  }
+
+}
+
+@media (min-width:$desktop-width) {
+  .downloads {
+    width: 1200px;
+  }
+
+  .downloads__img--phone {
+    top: 208px;
+    left: 150px;
+  }
+
+  .downloads__img--phone-pink {
+    position: absolute;
+    top: 272px;
+    right: 250px;
+  }
+
+  .downloads__link {
+    margin-top: -355px;
+    margin-left: 100px;
+  }
+
+  .downloads__icon {
+    left: 145px;
+  }
+
+  .downloads__slogan {
+    left: 150px;
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .downloads__text {
+    left: 140px;
+  }
+
+}

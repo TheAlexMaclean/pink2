@@ -1,0 +1,26 @@
+.page-header {
+  color: #ffffff;
+  background-color: #1D263D;
+}
+
+.page-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width:$desktop-width) {
+  .page-header__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+}

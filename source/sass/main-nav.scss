@@ -1,0 +1,160 @@
+.main-nav {
+  min-height: 35px;
+  position: relative;
+  padding-top: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  background-color: #283645;
+}
+
+.main-nav__logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  &:hover {
+	opacity: 0.3;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  margin: 0;
+  padding-top: 22px;
+  width: 320px;
+  height: 45px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+	color: #d22856;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 20px;
+  right: 20px;
+  width: 55px;
+  height: 30px;
+  background-color: #283645;
+  border: none;
+
+  &:hover {
+	opacity: 0.3;
+  }
+}
+
+.main-nav--closed .main-nav__toggle:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  top: 2px;
+  right: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 10px 0 0 #fff, 0 20px 0 0 #fff;
+}
+
+
+.main-nav--opened .main-nav__toggle {
+  &:before,
+  &:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 4px;
+	background-color: #fff;
+	cursor: pointer;
+  }
+
+  &:before {
+	transform: rotate(45deg);
+  }
+
+  &:after {
+	transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    padding-top: 100px;
+  }
+
+  .main-nav__logo {
+    top: 35px;
+    left: 35px;
+  }
+
+  .main-nav__item {
+    margin: 0;
+    padding-top: 22px;
+    width: 660px;
+    height: 45px;
+  }
+
+  .main-nav__toggle {
+    top: 50px;
+    right: 35px;
+  }
+
+}
+
+@media (min-width:$desktop-width) {
+
+  .main-nav__logo {
+    top: 35px;
+    left: 125px;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 70px;
+    top: 30px;
+    width: 700px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__item {
+    margin: 0;
+    padding-top: 22px;
+    width: 100px;
+    height: 45px;
+    opacity: 0.7;
+    border: none;
+  }
+
+}
