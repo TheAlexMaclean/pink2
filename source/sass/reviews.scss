@@ -5,6 +5,7 @@
   text-align: center;
   padding-top: 35px;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .reviews__name {
@@ -22,6 +23,13 @@
 .reviews__about {
   display: none;
 }
+
+.reviews__toggle__wrapper {
+  width: 320px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
 
 .reviews__toggle {
   display: flex;
@@ -75,6 +83,10 @@
     height: 220px;
   }
 
+  .reviews__toggle__wrapper {
+    width: 660px;
+  }
+
   .reviews__slider {
     display: flex;
     flex-wrap: wrap;
@@ -103,6 +115,12 @@
 
 
 @media (min-width:$desktop-width) {
+  .reviews__quotes__wrapper {
+    width: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+
   .reviews__quotes {
     display: block;
     margin: 0 auto;
@@ -116,6 +134,12 @@
   .reviews__slider {
     width: 700px;
     height: 235px;
+    margin: 0 auto;
+  }
+
+  .reviews__toggle__wrapper {
+    width: 1200px;
+    background-color: #fff;
     margin: 0 auto;
   }
 

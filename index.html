@@ -104,7 +104,9 @@
 
     </section>
 
+    <div class="reviews__quotes__wrapper">
     <img class="reviews__quotes" src="source/img/quotes.png" width="90" height="70" alt="Ковычки">
+    </div>
 
     <section class="reviews">
         <div class="reviews__slider">
@@ -133,7 +135,7 @@
         </div>
 
     </section>
-
+    <div class="reviews__toggle__wrapper">
     <ul class="reviews__toggle">
         <li class="reviews__toggle__item slider-1">
             <input class="reviews__button slider-btn-1" name="sld-btn" value="btn-1" type="radio" checked>
@@ -145,32 +147,54 @@
             <input class="reviews__button slider-btn-3" name="sld-btn" value="btn-3" type="radio">
         </li>
     </ul>
+    </div>
 
     <section class="price">
         <div class="price__wrapper">
 
             <table class="price__table">
-                <tr>
-                    <td>Розовый фильтр</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr class="price__table__row border-none">
+                    <td class="price__table__cell"></td>
+                    <td class="price__table__cell table__cell--refactor">БАЗА<br><span>1,99USD</span></td>
+                    <td class="price__table__cell table__cell--refactor sticker--hit">СТАНДАРТ<br><span>3,99USD</span></td>
+                    <td class="price__table__cell table__cell--refactor">АНЛИМ<br><span>9,99USD</span></td>
                 </tr>
 
-                <tr>
-                    <td>Смайлики</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr class="price__table__row">
+                    <td class="price__table__cell">Розовый фильтр</td>
+                    <td class="price__table__cell"><img src="source/img/yes.png" alt=""></td>
+                    <td class="price__table__cell"><img src="source/img/yes.png" alt=""></td>
+                    <td class="price__table__cell"><img src="source/img/yes.png" alt=""></td>
                 </tr>
 
-                <tr>
-                    <td>Коментарии</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr class="price__table__row">
+                    <td class="price__table__cell">Смайлики</td>
+                    <td class="price__table__cell"><img src="source/img/no.png" alt=""></td>
+                    <td class="price__table__cell"><img src="source/img/yes.png" alt=""></td>
+                    <td class="price__table__cell"><img src="source/img/yes.png" alt=""></td>
+                </tr>
+
+                <tr class="price__table__row">
+                    <td class="price__table__cell">Коментарии</td>
+                    <td class="price__table__cell"><img src="source/img/no.png" alt=""></td>
+                    <td class="price__table__cell"><img src="source/img/no.png" alt=""></td>
+                    <td class="price__table__cell"><img src="source/img/yes.png" alt=""></td>
                 </tr>
             </table>
+        </div>
+
+        <div class="price__toggle__wrapper">
+            <ul class="price__toggle">
+                <li class="price__toggle__item slider-1">
+                    <input class="price__button slider__price-btn-1" name="sld-btn" value="btn-1" type="radio">
+                </li>
+                <li class="price__toggle__item slider-2">
+                    <input class="price__button slider__price-btn-2" name="sld-btn" value="btn-2" type="radio" checked>
+                </li>
+                <li class="price__toggle__item slider-3">
+                    <input class="price__button slider__price-btn-3" name="sld-btn" value="btn-3" type="radio">
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -180,5 +204,6 @@
 
 <script src="dest/main-nav__script.js"></script>
 <script src="dest/reviews__slider__script.js"></script>
+<script src="dest/price__slider__script.js"></script>
 </body>
 </html>

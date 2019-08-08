@@ -1,0 +1,161 @@
+
+  .price {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 165px;
+    background: linear-gradient(-15deg, #f2f2f2 71%, #ffffff 72% );
+    overflow: hidden;
+  }
+
+  .price__wrapper {
+    width: 940px;
+    margin-left: -420px;
+  }
+
+  .price__table {
+    border-collapse: collapse;
+    text-align: center;
+
+  }
+
+  .price__table__cell {
+    width: 240px;
+    height: 60px;
+    border: 2px solid #e5e5e5;
+    color: #283645;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+  }
+
+  .table__cell--refactor {
+    background-color: #283645;
+    color: #ffffff;
+  }
+
+  .table__cell--refactor span {
+    opacity: 0.5;
+  }
+
+  .border-none {
+    border: 2px solid #f2f2f2;
+  }
+
+  .sticker--hit {
+    position: relative;
+  }
+
+  .sticker--hit:before {
+    content: "";
+    width: 74px;
+    height: 62px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(/source/img/sticker--hit.png);
+
+  }
+
+  .price__toggle {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+    width: 100px;
+    height: 20px;
+    position: relative;
+  }
+
+  .price__toggle__item {
+    width: 8px;
+    height: 8px;
+  }
+
+  .price__button {
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #bec2c7;
+    background-color: #bec2c7;
+    border-radius: 50%;
+    background-size: 15px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #7e868f;
+    }
+
+    &:checked {
+      background-color: #fff;
+    }
+
+  }
+
+  .show__price-slide-1 {
+    margin-left: -235px;
+  }
+
+  .show__price-slide-3 {
+    margin-left: -620px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    .price {
+      width: 660px;
+      background: linear-gradient(-8deg, #f2f2f2 71%, #ffffff 72% );
+    }
+
+    .price__wrapper {
+      width: 660px;
+      margin: 0 auto;
+    }
+
+    .price__table {
+      margin: 0 auto;
+    }
+
+    .price__toggle__wrapper {
+      display: none;
+    }
+
+    .price__table__cell {
+      width: 150px;
+      height: 45px;
+    }
+
+    .sticker--hit:before {
+      display: none;
+    }
+
+  }
+
+  @media (min-width: $desktop-width) {
+    .price {
+      width: 1200px;
+      background: linear-gradient(-5deg, #f2f2f2 76%, #ffffff 72% );
+    }
+
+    .price__wrapper {
+      width: 940px;
+    }
+
+    .price__table__cell {
+      width: 240px;
+      height: 60px;
+    }
+
+    .sticker--hit:before {
+      display: block;
+    }
+  }
+
+
+
+
