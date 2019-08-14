@@ -62,7 +62,8 @@ img {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  background-color: #283645; }
+  background-color: #283645;
+  z-index: 10; }
 
 .main-nav__logo {
   position: absolute;
@@ -807,3 +808,104 @@ img {
 @media (min-width: 1200px) {
   .page-footer {
     width: 1200px; } }
+
+.photo-page-header {
+  height: 345px;
+  overflow: hidden; }
+
+.photo-page-header__wrapper {
+  position: relative; }
+
+.photo-page-header__text {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  opacity: 0.7;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .photo-page-header {
+    height: 375px; }
+  .photo-page-header__text {
+    top: 130px;
+    left: 160px;
+    font-size: 50px;
+    line-height: 50px; } }
+
+@media (min-width: 1200px) {
+  .photo-page-header__text {
+    top: 130px;
+    left: 400px; } }
+
+.photo-page__posts {
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300; }
+
+.photo-page__posts__wrapper {
+  width: 320px;
+  margin: 0 auto; }
+
+.posts__item__wrapper {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: -10px; }
+
+.photo-page__text {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  width: 260px;
+  height: 90px;
+  margin: 0 auto;
+  padding: 20px 20px; }
+
+.photo-page__posts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.photo-page__posts__item {
+  margin-bottom: 20px; }
+
+.photo-page__posts__item img {
+  width: 320px;
+  height: auto; }
+
+.posts__item__name {
+  margin: 0;
+  padding: 0; }
+
+.name__condition {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 300;
+  padding-left: 5px;
+  opacity: 0.8; }
+
+.photo-page__posts__text {
+  margin: 0; }
+
+.photo-page__posts__like {
+  color: #d22856;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  padding-left: 35px;
+  position: relative;
+  cursor: pointer; }
+  .photo-page__posts__like:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-image: url(/source/img/icon-heart.svg.png);
+    background-repeat: no-repeat;
+    cursor: pointer; }
